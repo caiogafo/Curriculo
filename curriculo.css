@@ -1,0 +1,99 @@
+
+/* Estilos personalizados complementares ao Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Fundo cinza claro para contraste */
+}
+.resume-container {
+    max-width: 900px; /* Largura máxima do currículo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    border-radius: 8px; /* Cantos arredondados */
+    overflow: hidden; /* Garante que os cantos arredondados funcionem */
+    margin-left: auto; /* Centraliza */
+    margin-right: auto; /* Centraliza */
+}
+.left-column {
+    background-color: #1a3a6d; /* Azul escuro */
+    color: #ffffff; /* Texto branco */
+}
+.right-column {
+    background-color: #e0f2f7; /* Azul claro */
+    color: #1a202c; /* Texto escuro */
+}
+.section-title {
+    border-bottom: 2px solid #4a5568; /* Linha separadora */
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #2d3748;
+}
+.left-column .section-title {
+     border-bottom: 2px solid #a0aec0; /* Linha separadora clara */
+     color: #e2e8f0; /* Cor do título clara */
+}
+.logo {
+    border: 2px solid #ffffff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto; /* Centraliza e margem inferior */
+    font-size: 2rem;
+    font-weight: 700;
+}
+ /* Ajustes listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+ /* Marcador personalizado */
+li::before {
+    content: '•';
+    color: #4a5568;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+}
+.left-column li::before {
+    color: #a0aec0; /* Cor clara */
+}
+ /* Estilo links */
+ a {
+     color: #2b6cb0; /* Azul */
+     text-decoration: none;
+     transition: color 0.3s ease;
+ }
+ a:hover {
+     color: #1a3a6d; /* Azul escuro hover */
+ }
+ .left-column a {
+     color: #90cdf4; /* Azul claro */
+ }
+ .left-column a:hover {
+     color: #ffffff; /* Branco hover */
+ }
+ /* Ícones de contato */
+ .contact-info i {
+     width: 20px;
+     text-align: center;
+     margin-right: 8px;
+     color: #a0aec0;
+ }
+ .contact-info p {
+    display: flex;
+    align-items: center; /* Centraliza ícone com texto */
+    margin-bottom: 8px;
+ }
+ /* Garante quebra de linha no endereço */
+ .contact-info p i.fa-map-marker-alt {
+    align-self: flex-start; /* Alinha ícone de mapa no topo */
+    margin-top: 4px; /* Ajuste fino */
+ }
